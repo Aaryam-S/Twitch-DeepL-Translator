@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Twitch Chat Translator</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>Twitch Chat Translator</h1>
+
+  <label class="field">
+    <span>DeepL API Key</span>
+    <input type="password" id="apiKey" placeholder="xxxxxxxx-xxxx-...:fx" autocomplete="off" />
+  </label>
+
+  <label class="field">
+    <span>Translate incoming chat to</span>
+    <select id="targetLang">
+      <option value="EN-US">English (US)</option>
+      <option value="EN-GB">English (UK)</option>
+      <option value="ES">Spanish</option>
+      <option value="FR">French</option>
+      <option value="DE">German</option>
+      <option value="IT">Italian</option>
+      <option value="PT-BR">Portuguese (BR)</option>
+      <option value="JA">Japanese</option>
+      <option value="KO">Korean</option>
+      <option value="RU">Russian</option>
+      <option value="ZH">Chinese</option>
+    </select>
+  </label>
+
+  <label class="field">
+    <span>Translate outgoing chat to</span>
+    <select id="outgoingLang">
+      <option value="EN-US">English (US)</option>
+      <option value="EN-GB">English (UK)</option>
+      <option value="ES">Spanish</option>
+      <option value="FR">French</option>
+      <option value="DE">German</option>
+      <option value="IT">Italian</option>
+      <option value="PT-BR">Portuguese (BR)</option>
+      <option value="JA">Japanese</option>
+      <option value="KO">Korean</option>
+      <option value="RU">Russian</option>
+      <option value="ZH">Chinese</option>
+    </select>
+  </label>
+
+  <label class="toggle"><input type="checkbox" id="incomingEnabled" /> Enable Incoming Chat Translation</label>
+  <label class="toggle"><input type="checkbox" id="outgoingEnabled" /> Enable Outgoing Chat Translation</label>
+
+  <button id="save">Save</button>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

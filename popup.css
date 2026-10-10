@@ -1,0 +1,31 @@
+body {
+  width: 300px;
+  padding: 12px 14px 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  color: #1f1f23;
+}
+h1 { font-size: 16px; margin: 0 0 12px; color: #9147ff; }
+.field { display: block; margin-bottom: 10px; }
+.field span { display: block; margin-bottom: 3px; font-weight: 600; }
+.field input, .field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: 1px solid #c4c4cc;
+  border-radius: 4px;
+}
+.toggle { display: block; margin: 6px 0; cursor: pointer; }
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #9147ff;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { background: #772ce8; }
+#status { min-height: 16px; margin: 8px 0 0; font-size: 12px; color: #5c5c66; }

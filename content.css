@@ -1,0 +1,21 @@
+.tt-translation {
+  display: inline-block;
+  margin-top: 2px;
+  color: #ffd84d;
+  font-style: italic;
+}
+
+#tt-send-btn {
+  margin-right: 6px;
+  padding: 0 10px;
+  height: 30px;
+  background: #9147ff;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#tt-send-btn:hover { background: #772ce8; }
+#tt-send-btn:disabled { opacity: 0.6; cursor: default; }

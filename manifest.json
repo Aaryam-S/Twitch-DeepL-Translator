@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Chat Translator",
+  "version": "1.1.0",
+  "description": "Translate Twitch chat (incoming and outgoing) using DeepL.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.twitch.tv/*",
+    "https://api-free.deepl.com/*",
+    "https://api.deepl.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Twitch Chat Translator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
